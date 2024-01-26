@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+        .pagination{
+            text-align: center;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <!-- 머리글 -->
+    <div>
+        <h1>신규 등록 상품</h1>
+        <p></p>
+    </div>
+
+    <!-- 카테고리, 성별 선택 / 제품명 검색 -->
+    <form class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+            <select class="form-select" id="autoSizingSelect">
+              <option selected disabled>카테고리</option>
+              <option value="1">상의</option>
+              <option value="2">하의</option>
+              <option value="3">신발</option>
+              <option value="4">패션잡화</option>
+            </select>
+          </div>
+        
+        <form class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+            <select class="form-select" id="autoSizingSelect">
+              <option selected disabled>성별</option>
+              <option value="1">unisex</option>
+              <option value="2">men</option>
+              <option value="3">women</option>
+            
+            </select>
+          </div>
+
+        <div class="col-auto">
+          <label class="visually-hidden" for="autoSizingInput">Name</label>
+          <input type="text" class="form-control" id="autoSizingInput" placeholder="제품명을 입력해주세요">
+        </div>
+        
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">검색</button>
+        </div>
+      </form>
+
+    
+    <!-- 상품 정보 -->
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">카테고리</th>
+            <th scope="col">브랜드</th>
+            <th scope="col">상품명</th>
+            <th scope="col">가격</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">상의</th>
+            <td>Supreme</td>
+            <td>슈프림 박스로고 후드티</td>
+            <td>390,000</td>
+          </tr>
+          <tr>
+            <th scope="row">하의</th>
+            <td>Disel</td>
+            <td>디젤 트랙 팬츠</td>
+            <td>188,000</td>
+          </tr>
+          <tr>
+            <th scope="row">신발</th>
+            <td>Nike</td>
+            <td>에어포스 1</td>
+            <td>137,000</td>
+          </tr>
+          <tr>
+            <th scope="row">패션잡화</th>
+            <td>Music&Goods</td>
+            <td>빵빵이 키링</td>
+            <td>29,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <!-- 페이지 설정 -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    <!-- 이미지 깃허브 링크 -->
+      <a href="https://github.com/Yongdae92"><img src="/github.jpeg" width="50" height="50"></a><spam> github.yongdae92</spam>
+
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
